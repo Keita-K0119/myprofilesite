@@ -1,0 +1,477 @@
+.wrap-video{
+  position:relative;
+}
+
+.wrap-video video{
+  width: 100%;
+  height:100%;
+  z-index: 0;
+}
+
+.wrap-video .text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align:center;
+  z-index: 1;
+}
+
+.wrap-video .text p{
+  font-size:32px;
+  font-weight:bold;
+  color: lightblue;
+}
+
+.wrap-video .text .headline{
+  font-size:40px;
+  font-family: 'Caveat', cursive;
+}
+
+
+.wrap-video video {
+  animation: movieblack 6s normal;
+  animation-fill-mode: forwards;
+}
+
+@keyframes movieblack {
+  0% {
+    filter: grayscale(0%);
+  }
+  90% {
+    filter: grayscale(0%);
+  }
+  100% {
+    filter: grayscale(100%);
+  }
+}
+
+body{
+  color:#333;
+  font-family:verdana,sans-serif;
+}
+
+header{
+  background-color:#efefef;
+  padding-top:0px;
+  padding-bottom:0px;
+  font-size: 10px;
+}
+
+#aspslide {
+  position: relative;
+  width: 500px;
+  height: 400px;
+  overflow: hidden;
+  padding: 0!important;
+}
+
+.asnakami {
+  position: absolute;
+  top: 20px;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  padding: 0!important;
+}
+
+#asnakami {
+  -moz-animation: fadeinout 18s 0s infinite;
+  -webkit-animation: fadeinout 18s 0s infinite;
+  -o-animation: fadeinout 18s 0s infinite;
+  animation: fadeinout 18s 0s infinite;
+}
+
+#asnakami2 {
+  -moz-animation: fadeinout 18s 3s infinite;
+  -webkit-animation: fadeinout 18s 3s infinite;
+  -o-animation: fadeinout 18s 3s infinite;
+  animation: fadeinout 18s 3s infinite;
+}
+
+#asnakami3{
+  -moz-animation: fadeinout 18s 6s infinite;
+  -webkit-animation: fadeinout 18s 6s infinite;
+  -o-animation: fadeinout 18s 6s infinite;
+  animation: fadeinout 18s 6s infinite;
+}
+
+#asnakami4{
+  -moz-animation: fadeinout 18s 9s infinite;
+  -webkit-animation: fadeinout 18s 9s infinite;
+  -o-animation: fadeinout 18s 9s infinite;
+  animation: fadeinout 18s 9s infinite;
+}
+
+#asnakami5{
+  -moz-animation: fadeinout 18s 12s infinite;
+  -webkit-animation: fadeinout 18s 12s infinite;
+  -o-animation: fadeinout 18s 12s infinite;
+  animation: fadeinout 18s 12s infinite;
+}
+
+#asnakami6{
+  -moz-animation: fadeinout 18s 15s infinite;
+  -webkit-animation: fadeinout 18s 15s infinite;
+  -o-animation: fadeinout 18s 15s infinite;
+  animation: fadeinout 18s 15s infinite;
+}
+
+@-moz-keyframes fadeinout {
+  0% { left:0%; opacity:0;}
+  5% { left:0%;opacity:1; }
+  20% { left:0%; opacity:1;}
+  25% { left:0%;opacity:0; }
+  26% { opacity:0;left:100%; }
+  99.99% { opacity:0;left:100%; }
+  100% { opacity:0;left:0%; }
+}
+
+@-webkit-keyframes fadeinout {
+  0% { left:0%; opacity:0;}
+  5% { left:0%;opacity:1; }
+  20% { left:0%; opacity:1;}
+  25% { left:0%;opacity:0; }
+  26% { opacity:0;left:100%; }
+  99.99% { opacity:0;left:100%; }
+  100% { opacity:0;left:0%; }
+ }
+ 
+ @-o-keyframes fadeinout {
+  0% { left:0%; opacity:0;}
+  5% { left:0%;opacity:1; }
+  20% { left:0%; opacity:1;}
+  25% { left:0%;opacity:0; }
+  26% { opacity:0;left:100%; }
+  99.99% { opacity:0;left:100%; }
+  100% { opacity:0;left:0%; }
+ }
+ 
+ @keyframes fadeinout {
+  0% { left:0%; opacity:0;}
+  5% { left:0%;opacity:1; }
+  20% { left:0%; opacity:1;}
+  25% { left:0%;opacity:0; }
+  26% { opacity:0;left:100%; }
+  99.99% { opacity:0;left:100%; }
+  100% { opacity:0;left:0%; }
+ }
+
+
+.mylikes h1 {
+  border-bottom: solid 3px #333;
+  width: 300px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.imglinks {
+  display:flex;
+  flex-wrap:wrap;
+}
+
+.imglinks img {
+  height: 300px;
+  width: 300px;
+  cursor: pointer;
+  opacity: 2.0;
+}
+
+.ulimg li {
+  list-style: none;
+  margin: 10px;
+  overflow: hidden;
+  height: 300px;
+  width: 300px;
+  float: left;
+  flex-wrap: wrap;
+  display:flex;
+  align-items: center;
+}
+
+
+
+.imglinks img:hover {
+  transform: scale(1.2, 1.2);
+  transition-duration: 1.5s;
+}
+
+img.gray {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  overflow:hidden;
+}
+
+img.gray:hover {
+  -webkit-filter: grayscale(0);
+  -moz-filter: grayscale(0);
+  -ms-filter: grayscale(0);
+  -o-filter: grayscale(0);
+  filter: grayscale(0);
+  }
+
+
+
+
+
+.musicoverlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.95);
+  text-align: center;
+  padding: 32px;
+  opacity: 0;
+  pointer-events: none;
+  opacity: 0;
+  font-family: 'Caveat', cursive;
+  font-size: 20px;
+  transition: opacity .6s;
+}
+
+.musicoverlay.showmusic {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.musicoverlay #close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+.musicoverlay h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.musicoverlay p {
+  margin-top: 12px;
+}
+
+.traveloverlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.95);
+  text-align: center;
+  padding: 32px;
+  opacity: 0;
+  pointer-events: none;
+  opacity: 0;
+  font-family: 'Caveat', cursive;
+  font-size: 20px;
+  transition: opacity .6s;
+}
+
+.traveloverlay.showmusic {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.traveloverlay #close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+.traveloverlay h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.traveloverlay p {
+  margin-top: 12px;
+}
+
+
+.cinemaoverlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.95);
+  text-align: center;
+  padding: 32px;
+  opacity: 0;
+  pointer-events: none;
+  opacity: 0;
+  font-family: 'Caveat', cursive;
+  font-size: 20px;
+  transition: opacity .6s;
+}
+
+.cinemaoverlay.showmusic {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.cinemaoverlay #close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+.cinemaoverlay h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.cinemaoverlay p {
+  margin-top: 12px;
+}
+
+
+.baskeoverlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.95);
+  text-align: center;
+  padding: 32px;
+  opacity: 0;
+  pointer-events: none;
+  opacity: 0;
+  font-family: 'Caveat', cursive;
+  font-size: 20px;
+  transition: opacity .6s;
+}
+
+.baskeoverlay.showmusic {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.baskeoverlay #close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+.baskeoverlay h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.baskeoverlay p {
+  margin-top: 12px;
+}
+
+
+
+.fashionoverlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.95);
+  text-align: center;
+  padding: 32px;
+  opacity: 0;
+  pointer-events: none;
+  opacity: 0;
+  font-family: 'Caveat', cursive;
+  font-size: 20px;
+  transition: opacity .6s;
+}
+
+.fashionoverlay.showmusic {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.fashionoverlay #close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+.fashionoverlay h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.fashionoverlay p {
+  margin-top: 12px;
+}
+
+
+.programmeroverlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.95);
+  text-align: center;
+  padding: 32px;
+  opacity: 0;
+  pointer-events: none;
+  opacity: 0;
+  font-family: 'Caveat', cursive;
+  font-size: 20px;
+  transition: opacity .6s;
+}
+
+.programmeroverlay.showmusic {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.programmeroverlay #close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+.programmeroverlay h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.programmeroverlay p {
+  margin-top: 12px;
+} 
+
+
+footer {
+  background: black;
+  height: 150px;
+  bottom: 0;
+  width: 100vw;
+}
+
+footer h1{
+  text-align:center;
+}
+
+footer p {
+  text-align:center;
+  font-size:14px;
+  margin-bottom:0;
+  color:gray;
+}
